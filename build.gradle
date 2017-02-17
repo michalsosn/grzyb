@@ -1,0 +1,20 @@
+group 'in.evils.majkel'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+mainClassName = 'in.evils.majkel.grzyb.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.ratpack:ratpack-core:1.4.4'
+    compile 'ch.qos.logback:logback-classic:1.1.8'
+    testCompile 'junit:junit:4.11'
+}
